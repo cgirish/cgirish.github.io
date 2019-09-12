@@ -1,0 +1,32 @@
+.work {
+  background-color: #eee;
+
+  img {
+    font-size: 0;
+    padding: 0.25rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #000;
+    height: 9rem;
+
+    &:hover {
+      background: orangered;
+    }
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+
+    img {
+      width: 48%;
+      float: left;
+      height: 12rem;
+      margin-top: 3rem;
+
+      &:nth-child(2n) {
+        margin-right: 4%;
+      }
+    }
+  }
+}

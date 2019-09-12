@@ -1,0 +1,62 @@
+.logo {
+  float: left;
+  color: $brand-color;
+  text-decoration: none;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+  }
+}
+
+#logo rect {
+  fill: $brand-color;
+}
+
+nav {
+  background: #fff;
+  line-height: 1;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 0 5px #ccc;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+    transition: height 0.35s ease;
+
+    li {
+      float: left;
+
+      a {
+        color: $brand-color;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 2rem;
+        padding: 0 .5rem;
+        margin-left: 1px;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: top;
+
+        &:hover, &:focus, &:focus:active {
+          color: white;
+          background-color: gray;
+        }
+      }
+
+      &.active a {
+        &, &:hover, &:focus, &:focus:active {
+          color: white;
+          background-color: $brand-color;
+        }
+      }
+    }
+  }
+}
