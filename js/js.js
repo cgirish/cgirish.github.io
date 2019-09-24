@@ -54,7 +54,6 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
 const phrases = [
   'Front-end Development',
   'CSS(CSS3, SCSS, Less)',
@@ -86,13 +85,19 @@ next();
 // https://codepen.io/zenonchaos/pen/NMEyJz
 
 
+
+
 // Baseline
+// ——————————————————————————————————————————————————
 document.querySelector('.toggle-baseline').addEventListener('click', function() {
   document.querySelector('body').classList.toggle('baseline');
 });
 
 
+
+
 // Modal
+// ——————————————————————————————————————————————————
 document.addEventListener('click', function (e) {
   e = e || window.event;
   var target = e.target || e.srcElement;
@@ -118,11 +123,42 @@ document.addEventListener('click', function (e) {
 }, false);
 
 
+
+
+// Smooth Scroll
+// ——————————————————————————————————————————————————
+let mainNavLinks = document.querySelectorAll(".nav li a");
+
+function init() {
+  doSmoothScrolling();
+}
+
+function doSmoothScrolling() {
+  mainNavLinks.forEach(link => {
+    link.addEventListener("click", event => {
+      event.preventDefault();
+      let target = document.querySelector(event.target.hash);
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  });
+}
+init();
+
+
+
 // BE LAZY
+// ——————————————————————————————————————————————————
 ;(function() {
   var bLazy = new Blazy({});
 })();
 
 
+
+
+// Make navigation menus activate based on current view section
+// ——————————————————————————————————————————————————
 var elm = document.querySelector('nav');
 var ms = new MenuSpy(elm);
