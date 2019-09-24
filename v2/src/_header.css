@@ -1,0 +1,116 @@
+.header {
+  box-shadow: 0 5px 0 0 #eee;
+  background: linear-gradient(120deg,#fff,#f3f3f3 45%,#ededed 0,#fff);
+
+  .h1 {
+    color: currentColor;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 6rem;
+  }
+
+  .h3 {
+    color: currentColor;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .h4 {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+
+.text-gray {
+  color: #999;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.icon-holder {
+  font-size: 0;
+}
+
+.icon {
+  margin: 0 0.25rem;
+  display: inline-block;
+  text-decoration: none;
+
+  &.first {
+    margin-left: 0;
+  }
+
+  &:hover svg {
+    fill: #999;
+  }
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  svg:not(.sm svg) {
+    @media (min-width: 992px) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  + .separator {
+    width: 1px;
+    height: 1.5rem;
+    margin: .25rem 1.5rem;
+    display: inline-block;
+    background-color: #000;
+    vertical-align: middle;
+  }
+}
+
+.avatar {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1),
+              2px 10px 50px rgba(0, 0, 0, 0.35);
+}
+
+.lead-p p {
+  font-size: 24px;
+}
+
+.align-center {
+  text-align: center
+}
+
+.bg-gray {
+  background-color: #eee;
+}
+
+@media (max-width: 475px) {
+  .avatar {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .icon + .separator {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .header {
+    max-height: unset;
+    min-height: unset;
+    padding-top: 0;
+    background: linear-gradient(130deg, #fff, #f3f3f3 39%, #ededed 0, #fff);
+
+    .hv-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

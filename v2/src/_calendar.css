@@ -1,0 +1,98 @@
+
+#user-activity-overview {
+  display: none
+}
+
+.f4.text-normal.mb-2:before {
+  content: "See how productive i have been with ";
+}
+
+.calendar {
+  max-width: 750px;
+  min-height: 243px;
+  margin: 0 auto;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+.js-calendar-graph {
+  min-height: 6rem;
+}
+.graph-before-activity-overview {
+  margin-bottom: 1rem;
+}
+.calendar-graph text.wday,
+.calendar-graph text.month {
+  font-size: 10px;
+  fill: #aaa;
+}
+.contrib-legend {
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+
+.contrib-legend .legend {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+  position: relative;
+  bottom: -1px;
+  padding: 0;
+}
+
+.contrib-legend .legend li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.contrib-footer {
+  font-size: 11px;;
+  text-align: left;
+  max-width: 563px;
+  margin: 0 auto
+}
+
+.contrib-column {
+  line-height: 1rem;
+  box-shadow: 1px 0 0 0 #ccc, -1px 0 0 0 #ccc, 0 -1px 0 0 #ccc, 0 1px 0 0 #ccc;
+  padding: 1rem;
+  height: 6rem;
+  font-size: .8rem;
+  border-left: none;
+
+  span {
+    display: block;
+    line-height: 1rem;
+
+    &.contrib-number {
+      font-size: 1rem;
+      line-height: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 992px) {
+    width: 33%;
+    float: left;
+  }
+}
+
+.text-muted {
+  color: #767676;
+}
+
+@media (max-width: 563px) {
+  .contrib-legend,
+  .float-left.text-gray {
+    float: none;
+    line-height: 1rem;
+  }
+  .contrib-legend {
+    text-align: left;
+    display: block;
+    margin: 1rem 0;
+  }
+}

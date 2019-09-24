@@ -1,0 +1,91 @@
+@import "_variables";
+
+.modal {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0;
+  display: none;
+  height: 100vh;
+  left: 0;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: opacity 1s ease 0s;
+}
+
+.modal-window {
+  background-color: #fff;
+  max-width: 1000px;
+  position: relative;
+  padding: 1rem;
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 992px) {
+    background-color: #eee;
+    margin: 4rem auto;
+    width: 90%;
+    width: calc(100% - 100px);
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+.modal span:not(.close) {
+  font-size: 0;
+  margin: auto;
+  display: block;
+  max-width: 960px;
+  margin-top: 50px;
+  box-shadow: 0 0 0 3px #000;
+}
+
+.close {
+  top: 1rem;
+  right: 1rem;
+  color: #aaa;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  text-decoration: none;
+
+  padding: .25rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+
+  &:hover, &:focus {
+    color: indianred;
+    border-color: indianred;
+  }
+
+  @media (min-width: 992px) {
+    color: white;
+    top: 1rem;
+    right: 3rem;
+    background: none;
+  }
+}
+
+.open {
+  display: block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.loading {
+  background: #1E1E1E url('../img/loader.gif') center center no-repeat;
+}
+
+/* https://github.com/faurelia/simple-modal-view/ */
