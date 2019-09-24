@@ -24,7 +24,10 @@ module.exports = function(grunt) {
       target: {
         files: {
           // 'css/css.min.css': ['css/css.css', 'css/scss.css']
-          'css/css.min.css': 'css/css.css'
+          // 'css/css.min.css': 'css/css.css'
+
+          'css/css': 'css/css.css'
+          // this way when user downloads the html files it won't work correctly
         }
       }
     },
