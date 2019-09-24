@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           // 'css/css.min.css': 'css/css.css'
 
           'css/css': 'css/css.css'
-          // this way when user downloads the html files it won't work correctly
+          // this way when someone downloads this site it won't work correctly
         }
       }
     },
