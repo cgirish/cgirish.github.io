@@ -47,6 +47,28 @@ module.exports = function(grunt) {
           'index.html': 'index-source.html'        // 'destination': 'source'
         }
       }
+    },
+    uglify: {
+      options: {
+        compress: {
+          drop_console: true
+        }
+      },
+      my_target: {
+        // files: {
+        //   'js/js.min.js': ['js/js.js']
+
+        files: {
+          'js/js.min.js': [
+            'js/js/text-scramble.js',
+            'js/js/modal.js',
+            // 'js/js/baseline.js',
+            'js/js/smooth-scroll.js',
+            'js/js/be-lazy.js',
+            'js/js/menu-spy.js'
+          ]
+        }
+      }
     }
   });
 
@@ -55,6 +77,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify-es');
 
   // Default tasks.
   grunt.registerTask('default', ['htmlmin'], ['postcss'], ['cssmin']);
