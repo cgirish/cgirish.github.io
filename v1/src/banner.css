@@ -1,0 +1,74 @@
+@import "_variables";
+
+.valign-middle {
+  height: 100vh;
+  display: flex;
+  box-pack: center;
+  min-height: 500px;
+  box-align: center;
+  align-items: center;
+  transition: opacity 1s;
+  justify-content: center;
+}
+
+.banner {
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+.wrap {
+  width: 660px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 7rem;
+  font-weight: 100;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+
+  &:after {
+    height: 1px;
+    content: "";
+    width: 100px;
+    display: block;
+    background: black;
+    margin: 0.5rem auto auto;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 1rem 0 3rem 0;
+
+  small {
+    color: #999;
+    font-size: 60%;
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: normal;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 1em 0;
+}

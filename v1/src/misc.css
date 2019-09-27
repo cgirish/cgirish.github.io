@@ -1,0 +1,58 @@
+@import "_variables";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: $shade-dark;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+p, li {
+  line-height: 1.4;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+dialog {
+  display: block;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.md {
+  width: 48px;
+  height: 48px;
+}
+
+.de:hover svg {
+  fill: #05CC47;
+}
+
+.gi:hover svg {
+  fill: #4078c0;
+}
+
+.tw:hover svg {
+  fill: #00ACEE;
+}
+
+.li:hover svg {
+  fill: #0077B5;
+}
+
+.sk:hover svg {
+  fill: #3E9DD7;
+}
+
+.ma:hover svg {
+  fill: #666;
+}
