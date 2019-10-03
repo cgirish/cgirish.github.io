@@ -69,7 +69,7 @@ module.exports = function(grunt) {
           // ],
           'js/js.min.js': [
             'js/js/blazy.min.js',
-            'js/js/form-submission-handler.js',
+            // 'js/js/form-submission-handler.js',
             'js/js/menuspy.min.js',
             'js/js/github-calendar.min.js',
             'js/js/text-scramble.js',
