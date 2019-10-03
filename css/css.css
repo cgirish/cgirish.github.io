@@ -687,6 +687,32 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
 }
 
 /* https://github.com/faurelia/simple-modal-view/ */
+.skippy {
+  display: block;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  outline: 0;
+}
+.skippy:hover {
+  color: white;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skippy-text {
+  padding: .5em;
+  outline: 1px dotted;
+}
 .align-center {
   text-align: center
 }
