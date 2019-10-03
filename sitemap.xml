@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cgirish.github.io/</loc>
-    <lastmod>2019-10-20T19:11:56+00:00</lastmod>
+    <lastmod>2019-10-20T19:19:20+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://cgirish.github.io/sitemap.html</loc>
+    <lastmod>2019-10-20T19:19:27+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 </urlset>
