@@ -10,11 +10,16 @@ command to minify css
 grunt cssmin
 ```
 
-
 command to minify html
 ```shell
 grunt htmlmin
 ```
+
+command to minify js
+```shell
+grunt uglify
+```
+
 
 
 <!--
