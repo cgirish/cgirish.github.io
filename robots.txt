@@ -1,0 +1,8 @@
+# /robots.txt file for https://https://cgirish.github.io/, mail grsh84@gmail.com for constructive criticism
+
+User-agent: *
+Disallow: /v1/
+Disallow: /v2/
+
+# www.robotstxt.org/
+# https://support.google.com/webmasters/answer/6062608
