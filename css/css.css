@@ -373,8 +373,6 @@ section {
 }
 .logo {
   float: left;
-  color: #000;
-  text-decoration: none;
 }
 .logo svg {
   width: 2rem;

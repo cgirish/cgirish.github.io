@@ -1,7 +1,5 @@
 .logo {
   float: left;
-  color: $brand-color;
-  text-decoration: none;
 
   svg {
     width: 2rem;
