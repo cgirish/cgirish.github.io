@@ -4,8 +4,8 @@ module.exports = function(grunt) {
       options: {
         map: false,
         processors: [
-          require('precss')(), // allow you to use Sass-like CSS.
-          // require('pixrem')(), // add fallbacks for rem units.
+          require('precss')(),          // allow you to use Sass-like CSS.
+          // require('pixrem')(),       // add fallbacks for rem units.
           // require('postcss-calc')(), // reduces calc() to values (when expressions involve the same units).
           require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes
         ]
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
           removeComments: true,
           collapseWhitespace: true
         },
-        files: {                                   // Dictionary of files
+        files: {                                    // Dictionary of files
           'index.html': 'index-source.html'        // 'destination': 'source'
         }
       }
@@ -55,18 +55,7 @@ module.exports = function(grunt) {
         }
       },
       my_target: {
-        // files: {
-        //   'js/js.min.js': ['js/js.js']
-
         files: {
-          // 'js/js.min.js': [
-          //   'js/js/text-scramble.js',
-          //   'js/js/modal.js',
-          //   // 'js/js/baseline.js',
-          //   'js/js/smooth-scroll.js',
-          //   'js/js/be-lazy.js',
-          //   'js/js/menu-spy.js'
-          // ],
           'js/js.min.js': [
             'js/js/blazy.min.js',
             // 'js/js/form-submission-handler.js',
@@ -76,10 +65,22 @@ module.exports = function(grunt) {
             'js/js/modal.js',
             // 'js/js/baseline.js',
             'js/js/smooth-scroll.js',
-            'js/js/be-lazy.js',
-            'js/js/menu-spy.js'
+            'js/js/be-lazy.js'
           ]
         }
+      }
+    },
+    cacheBust: {
+      options: {
+          assets: ['dist/assets/**/*'],
+          baseDir: './dist/'
+      },
+      taskName: {
+        files: [{
+          expand: true,
+          cwd: 'dist/',
+          src: ['index.html', 'assets/**/*']
+        }]
       }
     }
   });
@@ -90,7 +91,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
+  grunt.loadNpmTasks('grunt-cache-bust');
 
   // Default tasks.
   grunt.registerTask('default', ['htmlmin'], ['postcss'], ['cssmin']);
 };
+
+
+
+
+// https://github.com/PaulTondeur/grunt-cache-busting

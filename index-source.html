@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 8)|!(IE)]><![endif]-->
 <html lang="en">
 <head>
   <script>LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};</script>
@@ -17,7 +20,7 @@
   <meta name="topic" content="Specialized in Creating Mockup Flows using Adobe XD/ Balsamiq/ Invision, can convert Wireframes (Hand drawn / PSD / Sketch files) to HTML or React Components">
   <meta name="theme-color" content="#fff">
   <!--
-  <meta name="robots" content="index,follow,noodp">
+  <meta name="robots" content="index,follow,noodp">  make sure you remove this if you want your website to be indexed by search engines
   <meta name="googlebot" content="index,follow">
   -->
 
@@ -30,6 +33,7 @@
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+  <!-- <link rel="apple-touch-startup-image" href="launch.png"> Splash screen image (image that is displayed when the website is being opened) -->
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +57,7 @@
   <link rel="manifest" href="/manifest.json">
 
   <!-- Icons -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <!-- <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"> -->
@@ -68,6 +72,8 @@
   <!-- <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png"> iPhone non-Retina iOS 7 -->
   <!-- <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png"> iPad non-Retina iOS 6 and prior -->
   <!-- <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png"> iPad non-Retina iOS 7 -->
+  <!-- <meta name="apple-mobile-web-app-status-bar-style" content="default"> Status bar style -->
+  <!-- <meta name="apple-mobile-web-app-title" content="My Website"> title of the website  -->
 
   <!-- <meta name="msapplication-TileColor" content="#fff"> -->
   <!-- <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png"> -->
@@ -231,9 +237,12 @@
     <br>
     <div class="container lead-p">
       <p>
-        Oh 👋 — I’m a UX/UI designer with strong Front-end development skills. I focus on doing what I love, Web is my
-        favourite platform for realizing new ideas. I am a perfectionist when it comes to pixel perfect designs and well
-        documented code.
+        Namaste 🙏, my name is Girish and I’m a UI/UX designer with strong Front-end development skills. A
+        result-oriented professional offering <script>document.write(new Date().getFullYear() - 2007)</script>+ years
+        of experience in UI/UX Design, and Frontend Development, with the proven know-how to combine creative and
+        usability viewpoints, a strong advocate for user-centered design, encouraging and initiating full team
+        collaboration so that the end-user remains at the forefront of the product or development process resulting in
+        world-class mobile, desktop, and web applications.
       </p>
       <p>
         On any given day, i design user-interfaces, building mobile friendly websites, landing pages and web apps, and
@@ -246,13 +255,13 @@
       </p>
       <p>
         Proficient in
+        <a href="https://www.adobe.com/in/products/xd.html" target="_blank">Adobe XD</a>,
         <a href="https://www.sketchapp.com/" target="_blank">Sketch</a>,
         <a href="http://principleformac.com/" target="_blank">Principle</a>,
         <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank">Illustrator</a>,
-        <a href="https://www.adobe.com/in/products/photoshop.html" target="_blank">Photoshop</a>,
-        <a href="https://www.adobe.com/in/products/xd.html" target="_blank">Adobe XD</a>, HTML, CSS (
-        <a href="http://sass-lang.com/" target="_blank">Sass</a>,
-        <a href="https://postcss.org/" target="_blank">PostCSS</a>), JavaScript, and more.
+        <a href="https://www.adobe.com/in/products/photoshop.html" target="_blank">Photoshop</a>, HTML, CSS
+        (<a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="https://postcss.org/" target="_blank">PostCSS</a>),
+        JavaScript, and more.
       </p>
       <p>
         Familiar with
@@ -260,20 +269,20 @@
         <a href="https://www.section508.gov/" target="_blank">508 compliance</a>.
       </p>
       <p>
-        Currently working as a Senior UI/UX Engineer at <b><a href="https://tokenvault.io/" target="_blank">tokenvault</b>, previously worked with
-        <a href="http://codemancers.com" target="_blank">Codemancers</a>, <a href="http://www.castlerockresearch.in/" target="_blank">Castlerock</a> and
-        <a href="http://agiline.com/" target="_blank">Agiline</a>.
+        Currently working as a Senior UI/UX Designer at <b><a href="https://tokenvault.io/" target="_blank">tokentech</a></b>,
+        previously worked with <a href="https://cleartax.com" target="_blank">Cleartax(Contract)</a>,<a href="https://codemancers.com" target="_blank">Codemancers</a>,
+        <a href="https://www.castlerockresearch.in/" target="_blank">Castlerock</a> and <a href="https://agiline.com/" target="_blank">Agiline</a>.
       </p>
     </div>
   </section>
 
-<!--
+  <!--
   <section class="cal md-align-center">
     <div class="container">
       <div class="calendar"></div>
     </div>
   </section>
--->
+  -->
 
   <!-- Work -->
   <section class="work">
@@ -312,7 +321,7 @@
         Awesome! I&rsquo;d love to hear from you! Please use the form below or email me directly at
         <a href="mailto:grsh84@gmail.com">grsh84@gmail.com</a>.
       </p>
-      <form class="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbwlyQulFLK_HKY3prNvfzith3GJRFb1WyUklHYm/exec">
+      <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwlyQulFLK_HKY3prNvfzith3GJRFb1WyUklHYm/exec">
         <div class="form-elements">
           <div class="row">
             <div class="col-md-6">

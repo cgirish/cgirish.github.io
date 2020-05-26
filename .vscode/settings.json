@@ -1,0 +1,74 @@
+{
+  // "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.wrappingIndent": "indent",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.tabCompletion": "on",
+  "editor.fontLigatures": true,
+  "editor.accessibilitySupport": "off",
+  "editor.detectIndentation": true,
+  "editor.cursorStyle": "block",
+  "editor.insertSpaces": true,
+  "editor.autoIndent": false,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.rulers": [
+    120
+  ],
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Visual Studio Light",
+  "html.format.endWithNewline": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "files.defaultLanguage": "html",
+  "explorer.confirmDelete": false,
+  "css.fileExtensions": [
+    "css",
+    "scss",
+    "less"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "breadcrumbs.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": [
+    "js"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.automationShell.osx": "/bin/zsh",
+  "editor.minimap.enabled": false,
+  "vetur.format.options.useTabs": true,
+  "vetur.format.options.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.foldingStrategy": "indentation",
+  "editor.renderIndentGuides": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveSassCompile.settings.formats":[
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css"
+    }
+  ],
+  "files.associations": {
+    "*.css": "scss"
+  }
+}
+
+
