@@ -3,21 +3,21 @@
   background: linear-gradient(120deg,#fff,#f3f3f3 45%,#ededed 0,#fff);
 
   .h1 {
-    color: currentColor;
     font-size: 5rem;
     font-weight: 100;
     line-height: 6rem;
+    color: currentColor;
   }
 
   .h3 {
-    color: currentColor;
     font-size: 2rem;
     font-weight: 100;
+    color: currentColor;
   }
 
   .h4 {
-    font-size: 1.5rem;
     font-weight: 100;
+    font-size: 1.5rem;
   }
 }
 
@@ -45,6 +45,7 @@
   &:hover svg {
     fill: #999;
   }
+
   svg {
     width: 2rem;
     height: 2rem;
@@ -57,7 +58,7 @@
     }
   }
 
-  + .separator {
+  & + .separator {
     width: 1px;
     height: 1.5rem;
     margin: .25rem 1.5rem;
@@ -102,9 +103,9 @@
   }
 
   .header {
+    padding-top: 0;
     max-height: unset;
     min-height: unset;
-    padding-top: 0;
     background: linear-gradient(130deg, #fff, #f3f3f3 39%, #ededed 0, #fff);
 
     .hv-center {

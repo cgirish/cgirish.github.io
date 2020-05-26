@@ -1,9 +1,9 @@
 .skippy {
-  display: block;
+  outline: 0;
   padding: 1em;
   color: white;
+  display: block;
   text-align: center;
-  outline: 0;
 
   &:hover {
     color: white;
@@ -11,14 +11,14 @@
 }
 
 .sr-only {
-  position: absolute;
+  border: 0;
   width: 1px;
-  height: 1px;
   padding: 0;
+  height: 1px;
   overflow: hidden;
+  position: absolute;
   clip: rect(0,0,0,0);
   white-space: nowrap;
-  border: 0;
 }
 
 .skippy-text {

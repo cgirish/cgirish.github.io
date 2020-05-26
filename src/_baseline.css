@@ -1,0 +1,82 @@
+
+.toggle-baseline {
+  z-index: 5;
+  width: 2rem;
+  right: 1rem;
+  bottom: 1rem;
+  height: 2rem;
+  border: none;
+  position: fixed;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: $brand-color;
+
+  svg {
+    fill: #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &:after, &:before {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: -2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    margin: -50% 0 0 -50%;
+    backface-visibility: hidden;
+    border: 1px solid $brand-color;
+    animation: pulse 1.5s linear infinite;
+  }
+
+  &:after {
+    animation-delay: .5s;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.baseline {
+  position: relative;
+  background-size: 100% 1rem;
+  background-image: linear-gradient(0, #bbb 0, transparent 1px);
+
+  *:not(.container):not(.row):not(.col-md-6):not(.col-md-5):not(.col-md-7):not(img):not(svg):not(.separator):not(.calendar):not(.position-relative):not(.js-calendar-graph):not(.contrib-footer):not(.calendar):not(.graph-before-activity-overview):not(input):not(button):not(textarea):not(dialog):not(.modal-window) {
+    background: rgba(0, 255, 0, 0.25);
+  }
+
+  dialog {
+    background: black;
+
+    .modal-window {
+      background-color: #fff;
+      background-size: 100% 1rem;
+      background-image: linear-gradient(0, #bbb 0, transparent 1px);
+
+      * {
+        background: rgba(0, 255, 0, 0.25);
+      }
+    }
+  }
+}

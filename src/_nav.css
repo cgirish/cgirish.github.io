@@ -13,13 +13,13 @@
 }
 
 nav {
-  background: #fff;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   line-height: 1;
   padding: 1rem 0;
   position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+  background: #fff;
   box-shadow: 0 0 5px #ccc;
 
   ul {
@@ -33,15 +33,15 @@ nav {
       float: left;
 
       a {
-        color: $brand-color;
         font-size: 1rem;
-        font-weight: bold;
-        line-height: 2rem;
         padding: 0 .5rem;
         margin-left: 1px;
+        font-weight: bold;
+        line-height: 2rem;
+        color: $brand-color;
+        vertical-align: top;
         text-decoration: none;
         display: inline-block;
-        vertical-align: top;
 
         &:hover, &:focus, &:focus:active {
           color: white;
@@ -50,7 +50,10 @@ nav {
       }
 
       &.active a {
-        &, &:hover, &:focus, &:focus:active {
+        &,
+        &:hover,
+        &:focus,
+        &:focus:active {
           color: white;
           background-color: $brand-color;
         }

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*
+more information about css variables:
+https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
+https://madebymike.com.au/writing/using-css-variables/
+
+browser support:
+http://caniuse.com/#feat=css-variables
+*/
 
 
 html {
@@ -28,6 +36,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
+
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -37,12 +46,12 @@ html {
 
 body {
   margin: 0;
-  color: #000;
-  font-family: sans-serif;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 4rem; /* 64px to make the container go all the way to the bottom */
+  color: #000;
+  font-weight: normal;
+  font-family: sans-serif;
 }
 
 ::-moz-selection {
@@ -58,9 +67,9 @@ body {
 }
 
 .clearfix::after {
-  display: table;
   clear: both;
   content: "";
+  display: table;
 }
 
 a {
@@ -79,7 +88,6 @@ a[href]:empty::before {
 }
 */
 
-
 :focus {
   outline: none;
 }
@@ -97,8 +105,8 @@ p {
   margin: 0 0 2rem 0;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
 }
 
@@ -106,6 +114,7 @@ h1, .h1 {
   font-size: 2.5rem;
   line-height: 3rem;
 }
+
 h2, .h2 {
   font-size: 1.875rem;
   line-height: 2rem;
@@ -141,112 +150,9 @@ a, span, small, i, b, strong, em {
 section {
   padding: 4rem 0;
 }
-
-
-
-
-
-.toggle-baseline {
-  background-color: #000;
-  border-radius: 50%;
-  border: none;
-  bottom: 1rem;
-  cursor: pointer;
-  display: inline-block;
-  height: 2rem;
-  padding: 0.25rem;
-  position: fixed;
-  right: 1rem;
-  width: 2rem;
-  z-index: 5;
-}
-
-
-
-
-
-.toggle-baseline svg {
-  border-radius: 50%;
-  position: relative;
-  fill: #fff;
-}
-
-
-
-
-
-.toggle-baseline:after, .toggle-baseline:before {
-  animation: pulse 1.5s linear infinite;
-  backface-visibility: hidden;
-  border-radius: 50%;
-  border: 1px solid #000;
-  content: '';
-  display: block;
-  height: 100%;
-  left: 50%;
-  margin: -50% 0 0 -50%;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  z-index: -2;
-}
-
-
-
-
-
-.toggle-baseline:after {
-  animation-delay: .5s;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-}
-
-
-.baseline {
-  background-image: linear-gradient(0, #bbb 0, transparent 1px);
-  background-size: 100% 1rem;
-  position: relative;
-}
-
-
-.baseline *:not(.container):not(.row):not(.col-md-6):not(.col-md-5):not(.col-md-7):not(img):not(svg):not(.separator):not(.calendar):not(.position-relative):not(.js-calendar-graph):not(.contrib-footer):not(.calendar):not(.graph-before-activity-overview):not(input):not(button):not(textarea):not(dialog):not(.modal-window) {
-  background: rgba(0, 255, 0, 0.25);
-}
-
-
-.baseline dialog {
-  background: black;
-}
-
-
-.baseline dialog .modal-window {
-  background-image: linear-gradient(0, #bbb 0, transparent 1px);
-  background-size: 100% 1rem;
-  background-color: #fff;
-}
-
-
-.baseline dialog .modal-window * {
-  background: rgba(0, 255, 0, 0.25);
-}
 .container {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -286,40 +192,52 @@ section {
   .col-sm-6, .col-sm-7, .col-sm-9 {
     float: left;
   }
+
   .col-sm-9 {
     float: left;
     width: 75%;
   }
+
   .col-sm-7 {
     width: 58.33333333%;
   }
+
   .col-sm-6 {
     width: 50%;
   }
+
   .col-sm-5 {
     width: 41.66666667%;
   }
+
   .col-sm-4 {
     width: 33.33%;
   }
+
   .col-sm-3 {
     width: 25%;
   }
+
   .col-sm-offset-9 {
     margin-left: 75%;
   }
+
   .col-sm-offset-7 {
     margin-left: 58.33%;
   }
+
   .col-sm-offset-6 {
     margin-left: 50%;
   }
+
   .col-sm-offset-5 {
     margin-left: 41.66%;
   }
+
   .col-sm-offset-4 {
     margin-left: 33.33%;
   }
+
   .col-sm-offset-3 {
     margin-left: 25%;
   }
@@ -329,44 +247,57 @@ section {
   .container {
     max-width: 1200px;
   }
+
   .col-md-3, .col-md-4, .col-md-5,
   .col-md-6, .col-md-7, .col-md-9 {
     float: left;
   }
+
   .col-md-9 {
     float: left;
     width: 75%;
   }
+
   .col-md-7 {
     width: 58.33333333%;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-5 {
     width: 41.66666667%;
   }
+
   .col-md-4 {
     width: 33.33%;
   }
+
   .col-md-3 {
     width: 25%;
   }
+
   .col-md-offset-9 {
     margin-left: 75%;
   }
+
   .col-md-offset-7 {
     margin-left: 58.33%;
   }
+
   .col-md-offset-6 {
     margin-left: 50%;
   }
+
   .col-md-offset-5 {
     margin-left: 41.66%;
   }
+
   .col-md-offset-4 {
     margin-left: 33.33%;
   }
+
   .col-md-offset-3 {
     margin-left: 25%;
   }
@@ -385,13 +316,13 @@ section {
 }
 
 nav {
-  background: #fff;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   line-height: 1;
   padding: 1rem 0;
   position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+  background: #fff;
   box-shadow: 0 0 5px #ccc;
 }
 
@@ -408,15 +339,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000;
   font-size: 1rem;
-  font-weight: bold;
-  line-height: 2rem;
   padding: 0 .5rem;
   margin-left: 1px;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #000;
+  vertical-align: top;
   text-decoration: none;
   display: inline-block;
-  vertical-align: top;
 }
 
 nav ul li a:hover, nav ul li a:focus, nav ul li a:focus:active {
@@ -433,19 +364,19 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
   background: linear-gradient(120deg,#fff,#f3f3f3 45%,#ededed 0,#fff);
 }
 .header .h1 {
-  color: currentColor;
   font-size: 5rem;
   font-weight: 100;
   line-height: 6rem;
+  color: currentColor;
 }
 .header .h3 {
-  color: currentColor;
   font-size: 2rem;
   font-weight: 100;
+  color: currentColor;
 }
 .header .h4 {
-  font-size: 1.5rem;
   font-weight: 100;
+  font-size: 1.5rem;
 }
 
 .text-gray {
@@ -532,9 +463,9 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
   }
 
   .header {
+    padding-top: 0;
     max-height: unset;
     min-height: unset;
-    padding-top: 0;
     background: linear-gradient(130deg, #fff, #f3f3f3 39%, #ededed 0, #fff);
   }
 
@@ -553,12 +484,13 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
 }
 .work img {
   font-size: 0;
+  height: 9rem;
+  cursor: pointer;
   padding: 0.25rem;
   margin-top: 2rem;
-  cursor: pointer;
-  box-sizing: border-box;
   background: #000;
-  height: 9rem;
+  object-fit: contain;
+  box-sizing: border-box;
 }
 .work img:hover {
   background: orangered;
@@ -584,27 +516,27 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
   }
 }
 .modal {
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 0;
-  display: none;
-  height: 100vh;
+  top: 0;
   left: 0;
   margin: 0;
-  overflow-y: scroll;
+  border: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 9999;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  background-color: #000000;
   transition: opacity 1s ease 0s;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-window {
-  background-color: #fff;
+  padding: 1rem;
   max-width: 1000px;
   position: relative;
-  padding: 1rem;
+  background-color: #fff;
 }
 
 .modal-window h2 {
@@ -615,11 +547,11 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
 
 
   .modal-window{
-    background-color: #eee;
-    margin: 4rem auto;
     width: 90%;
-    width: calc(100% - 100px);
+    margin: 4rem auto;
+    background-color: #eee;
     padding: 2rem 3rem 3rem;
+    width: calc(100% - 100px);
   }
 }
 
@@ -633,13 +565,15 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
 }
 
 .close {
-  top: 1rem;
-  right: 1rem;
+  top: 0;
+  right: 0;
   color: #aaa;
-  cursor: pointer;
-  position: fixed;
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
+  position: fixed;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .close:hover, .close:focus {
@@ -686,25 +620,25 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
 
 /* https://github.com/faurelia/simple-modal-view/ */
 .skippy {
-  display: block;
+  outline: 0;
   padding: 1em;
   color: white;
+  display: block;
   text-align: center;
-  outline: 0;
 }
 .skippy:hover {
   color: white;
 }
 
 .sr-only {
-  position: absolute;
+  border: 0;
   width: 1px;
-  height: 1px;
   padding: 0;
+  height: 1px;
   overflow: hidden;
+  position: absolute;
   clip: rect(0,0,0,0);
   white-space: nowrap;
-  border: 0;
 }
 
 .skippy-text {
@@ -761,6 +695,7 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
   .visible-md {
     display: block
   }
+
   .hidden-md,
   .hidden-desktop {
     display: none
@@ -779,13 +714,12 @@ nav ul li.active a, nav ul li.active a:hover, nav ul li.active a:focus, nav ul l
   }
 }
 
-
-
 h2[id]:before {
-  display: block;
+  content: "";
   height: 6rem;
+  display: block;
   margin-top: -6rem;
   visibility: hidden;
-  content: "";
 }
 /* @import "_form"; */
+/* @import "_baseline"; */

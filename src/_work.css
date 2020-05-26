@@ -3,12 +3,13 @@
 
   img {
     font-size: 0;
+    height: 9rem;
+    cursor: pointer;
     padding: 0.25rem;
     margin-top: 2rem;
-    cursor: pointer;
-    box-sizing: border-box;
     background: #000;
-    height: 9rem;
+    object-fit: contain;
+    box-sizing: border-box;
 
     &:hover {
       background: orangered;

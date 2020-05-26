@@ -13,23 +13,23 @@ textarea,
 [type="submit"],
 input[type="text"],
 input[type="email"] {
-  background-color: #fff;
-  background-position: right 8px center;
-  background-repeat: no-repeat;
-  border-radius: 0.25rem;
+  width: 100%;
   border: none;
-  box-shadow: inset 0 0 0 1px #ccc, inset 0 2px 2px rgba(27,31,35,0.075);
-  color: #24292e;
+  outline: none;
   display: block;
   font-size: 20px;
+  color: #24292e;
+  min-height: 2rem;
+  padding: 0 .25rem;
   line-height: 2rem;
   margin-bottom: 1rem;
-  min-height: 2rem;
-  outline: none;
-  padding: 0 .25rem;
-  vertical-align: middle;
-  width: 100%;
+  border-radius: 0.25rem;
+  background-color: #fff;
   font-family: $sans-serif;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  box-shadow: inset 0 0 0 1px #ccc,
+              inset 0 2px 2px rgba(27,31,35,0.075);
 }
 
 textarea,
@@ -49,43 +49,43 @@ textarea {
 }
 
 [type="submit"] {
-  font-weight: 600;
-  white-space: nowrap;
-  vertical-align: middle;
+  color: #fff;
+  border: none;
   border: none;
   cursor: pointer;
-  user-select: none;
-  background-repeat: repeat-x;
-  background-position: -1px -1px;
-  background-size: 110% 110%;
+  font-weight: 600;
   appearance: none;
-  color: #fff;
+  user-select: none;
   line-height: 3rem;
-  border: none;
-  box-shadow: inset 0 0 0 1px rgba(27,31,35,0.2);
+  white-space: nowrap;
+  vertical-align: middle;
   border-radius: 0.25rem;
   background-color: #28a745;
+  background-size: 110% 110%;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  box-shadow: inset 0 0 0 1px rgba(27,31,35,0.2);
   background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
 
   &:hover {
     background-color: #269f42;
-    background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
     background-position: -.5em;
     box-shadow: inset 0 0 0 1px rgba(27,31,35,0.5);
+    background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
   }
 
   &:focus {
     outline: none;
     background-color: #269f42;
-    background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
     background-position: -.5em;
     box-shadow: inset 0 0 0 1px rgba(27,31,35,0.5),
                 0 0 0 4px rgba(3,102,214,0.3);
+    background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
   }
 
   &:active {
-    background-color: #279f43;
     background-image: none;
+    background-color: #279f43;
     box-shadow: inset 0 0 0 1px rgba(27,31,35,0.5),
                 inset 0 0.15em 0.3em rgba(27,31,35,0.15);
   }
@@ -96,10 +96,10 @@ textarea,
 input[type="text"],
 input[type="email"] {
   &:disabled, &[disabled] {
-    background: #ccc;
     color: #999;
+    background: #ccc;
     box-shadow: none;
-    box-shadow: inset 0 0 0 1px rgba(27,31,35,0.5);
     cursor: not-allowed;
+    box-shadow: inset 0 0 0 1px rgba(27,31,35,0.5);
   }
 }

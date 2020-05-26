@@ -48,6 +48,7 @@
   .visible-md {
     display: block
   }
+
   .hidden-md,
   .hidden-desktop {
     display: none
@@ -66,12 +67,10 @@
   }
 }
 
-
-
 h2[id]:before {
-  display: block;
+  content: "";
   height: 6rem;
+  display: block;
   margin-top: -6rem;
   visibility: hidden;
-  content: "";
 }

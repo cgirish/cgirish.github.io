@@ -1,38 +1,38 @@
 @import "_variables";
 
 .modal {
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 0;
-  display: none;
-  height: 100vh;
+  top: 0;
   left: 0;
   margin: 0;
-  overflow-y: scroll;
+  border: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 9999;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  background-color: #000000;
   transition: opacity 1s ease 0s;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-window {
-  background-color: #fff;
+  padding: 1rem;
   max-width: 1000px;
   position: relative;
-  padding: 1rem;
+  background-color: #fff;
 
   h2 {
     margin-top: 1rem;
   }
 
   @media (min-width: 992px) {
-    background-color: #eee;
-    margin: 4rem auto;
     width: 90%;
-    width: calc(100% - 100px);
+    margin: 4rem auto;
+    background-color: #eee;
     padding: 2rem 3rem 3rem;
+    width: calc(100% - 100px);
   }
 }
 
@@ -46,14 +46,15 @@
 }
 
 .close {
-  top: 1rem;
-  right: 1rem;
+  top: 0;
+  right: 0;
   color: #aaa;
-  cursor: pointer;
-  position: fixed;
   width: 3rem;
   height: 3rem;
-
+  cursor: pointer;
+  position: fixed;
+  margin-top: 1rem;
+  margin-right: 1rem;
 
   &:hover, &:focus {
     color: indianred;
