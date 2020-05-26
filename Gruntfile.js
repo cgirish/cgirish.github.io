@@ -70,19 +70,19 @@ module.exports = function(grunt) {
         }
       }
     },
-    cacheBust: {
-      options: {
-          assets: ['dist/assets/**/*'],
-          baseDir: './dist/'
-      },
-      taskName: {
-        files: [{
-          expand: true,
-          cwd: 'dist/',
-          src: ['index.html', 'assets/**/*']
-        }]
-      }
-    }
+    // cacheBust: {
+    //   options: {
+    //       assets: ['dist/assets/**/*'],
+    //       baseDir: './dist/'
+    //   },
+    //   taskName: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: 'dist/',
+    //       src: ['index.html', 'assets/**/*']
+    //     }]
+    //   }
+    // }
   });
 
   // Load the plugins
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
-  grunt.loadNpmTasks('grunt-cache-bust');
+  // grunt.loadNpmTasks('grunt-cache-bust');
 
   // Default tasks.
   grunt.registerTask('default', ['htmlmin'], ['postcss'], ['cssmin']);
