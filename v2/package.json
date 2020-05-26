@@ -3,19 +3,20 @@
   "version": "1.0.0",
   "description": "y",
   "main": "Gruntfile.js",
-  "homepage": "https://github.com/cgirish/cgirish.github.io/README.md",
+  "homepage": "https://cgirish.github.io/",
   "dependencies": {
     "latest-version": "^2.0.0"
   },
   "devDependencies": {
-    "autoprefixer-core": "^5.2.1",
-    "grunt": "^1.0.4",
+    "autoprefixer-core": "^6.0.1",
+    "grunt": "^1.1.0",
     "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-htmlmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-htmlmin": "^0.1.4",
-    "grunt-postcss": "^0.5.5",
-    "precss": "^0.3.0"
+    "grunt-postcss": "^0.9.0",
+    "precss": "^4.0.0"
   },
   "scripts": {
     "test": "test"
