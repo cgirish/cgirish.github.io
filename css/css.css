@@ -119,6 +119,9 @@ h3, h4, h5, h6 {
 a, span, small, i, b, strong, em {
   display: inline-block;
 }
+p b {
+  display: inline;
+}
 section {
   padding: 4rem 0;
 }
