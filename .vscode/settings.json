@@ -19,7 +19,7 @@
   "editor.rulers": [
     120
   ],
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Visual Studio Light",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
@@ -68,6 +68,9 @@
   ],
   "files.associations": {
     "*.css": "scss"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
 
