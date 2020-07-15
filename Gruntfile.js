@@ -57,15 +57,16 @@ module.exports = function(grunt) {
       my_target: {
         files: {
           'js/js.min.js': [
-            'js/js/blazy.min.js',
+            'js/js/text-scramble.js',
             'js/js/form-submission-handler.js',
             'js/js/menuspy.min.js',
-            'js/js/github-calendar.min.js',
-            'js/js/text-scramble.js',
-            'js/js/modal.js',
-            // 'js/js/baseline.js',
+            'js/js/menu-spy.js',
             'js/js/smooth-scroll.js',
+            // 'js/js/github-calendar.min.js',
+            'js/js/modal.js',
+            'js/js/blazy.min.js',
             'js/js/be-lazy.js'
+            // 'js/js/baseline.js',
           ]
         }
       }
