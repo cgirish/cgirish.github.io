@@ -492,8 +492,11 @@ html {
   padding: 1rem;
   max-width: 830px;
   position: relative;
-  background-color: #fff;
+  background-color: #fff
 }
+.modal-window.md {
+    max-width: 808px;
+  }
 .modal-window h2 {
     margin-top: 1rem;
   }

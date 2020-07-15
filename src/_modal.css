@@ -23,6 +23,10 @@
   position: relative;
   background-color: #fff;
 
+  &.md {
+    max-width: 808px;
+  }
+
   h2 {
     margin-top: 1rem;
   }
